@@ -2,20 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EZ Help Bookmark Manager</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div id="app">
-        <h1>EZ Help Bookmark Manager</h1>
-        <form id="bookmarkForm">
-            <input type="url" id="urlInput" placeholder="Please Enter URL..." required>
-            <input type="text" id="titleInput" placeholder="Please Enter Bookmark Title..." required>
-            <button type="submit">Add Bookmark</button>
+    <div id="app" class="app-container">
+        <header class="header">
+            <h1>EZ Help Bookmark Manager</h1>
+            <p>Welcome to your personal bookmark manager. Save your favorite websites in one place and access them anywhere, anytime.</p>
+        </header>
+        <form id="bookmarkForm" class="bookmark-form">
+            <input type="url" id="urlInput" placeholder="Please Enter URL..." required class="input-field">
+            <input type="text" id="titleInput" placeholder="Please Enter Bookmark Title..." required class="input-field">
+            <button type="submit" class="submit-btn">Add Bookmark</button>
         </form>
-        <ul id="bookmarkList"></ul>
+        <ul id="bookmarkList" class="bookmark-list"></ul>
+        
+        <!-- Modal for Editing Bookmarks -->
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="editForm">
+                    <input type="text" id="editTitle" placeholder="Edit title" class="input-field">
+                    <button type="submit" class="save-btn">Save Changes</button>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>© 2024 EZ Help Technology. All rights reserved.</p>
+            <p>Visit our <a href="https://example.com/about-us" target="_blank">About Us</a> page to learn more about our team and mission.</p>
+        </footer>
     </div>
-    
 </body>
 </html>
