@@ -1,0 +1,1 @@
+console.log('EZ Help Technology Bookmark Manager')
