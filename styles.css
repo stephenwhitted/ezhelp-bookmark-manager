@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #000; 
+    color: #fff; 
     line-height: 1.6;
     padding: 20px;
 }
@@ -17,15 +17,16 @@ body {
     width: 100%;
     max-width: 600px;
     margin: auto;
-    background: #ffffff;
+    background: #222; 
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
 .header {
     margin-bottom: 20px;
     text-align: center;
+    color: #ffa500; 
 }
 
 .header h1 {
@@ -33,7 +34,7 @@ body {
 }
 
 .header p {
-    color: #666;
+    color: #ffa500; 
     font-size: 0.9em;
 }
 
@@ -47,15 +48,17 @@ body {
 .input-field {
     width: 100%;
     padding: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid #555; 
     border-radius: 4px;
     font-size: 16px;
+    color: #fff; 
+    background-color: #333; 
 }
 
 .submit-btn, .save-btn {
     padding: 10px 20px;
-    background-color: #0056b3;
-    color: white;
+    background-color: #ffa500; 
+    color: #000; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -63,7 +66,7 @@ body {
 }
 
 .submit-btn:hover, .save-btn:hover {
-    background-color: #004494;
+    background-color: #cc8400; /
 }
 
 .bookmark-list {
@@ -71,7 +74,7 @@ body {
 }
 
 .bookmark-list li {
-    background-color: #f0f0f0;
+    background-color: #333;
     margin-top: 5px;
     padding: 10px;
     border-radius: 4px;
@@ -81,28 +84,28 @@ body {
 }
 
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
-    z-index: 10; /* Sit on top */
+    z-index: 10;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    background-color: #222;
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
     position: relative;
 }
 
 .close {
-    color: #aaa;
+    color: #ffa500; 
     position: absolute;
     right: 10px;
     top: 10px;
@@ -112,21 +115,22 @@ body {
 }
 
 .close:hover {
-    color: black;
+    color: #ffcc00; 
 }
 
 .footer {
     margin-top: 20px;
     text-align: center;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #444; 
     padding-top: 10px;
 }
 
 .footer a {
-    color: #0056b3;
+    color: #ffa500; 
     text-decoration: none;
 }
 
 .footer a:hover {
     text-decoration: underline;
+    color: #ffcc00; 
 }
