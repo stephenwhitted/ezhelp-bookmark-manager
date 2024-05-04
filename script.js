@@ -20,4 +20,27 @@ document.addEventListener('DOMContentLoaded', function() {
         urlInput.value = '';
         titleInput.value = '';
 
-       
+        // Add delete functionality
+        li.querySelector('.deleteBtn').addEventListener('click', function() {
+            bookmarkList.removeChild(li);
+        });
+
+        // Modify styles and attributes dynamically
+        li.style.backgroundColor = '#cfc';
+        li.firstChild.style.color = 'red'; // First child is the <a> tag
+        li.setAttribute('data-url', url);
+    });
+
+    window.addEventListener('resize', function() {
+        console.log('Window resized to: ' + window.innerWidth + 'x' + window.innerHeight);
+    });
+
+    // DOM event-based validation
+    urlInput.addEventListener('input', function() {
+        if (!this.validity.valid) {
+            this.style.borderColor = 'red';
+        } else {
+            this.style.borderColor = 'initial';
+        }
+    });
+});
